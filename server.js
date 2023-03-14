@@ -16,6 +16,7 @@ if (process.env.DEBUG == 1) {
 
 app.use(express.json()) //For accessing json body 
 app.use('/api/contact', require('./routes/contactRoutes')); // This router was defined for our contactRoutes
+app.use('/api/users', require('./routes/userRoutes')); // This router was defined for our contactRoutes
 
 app.use(errorHandler);
 
